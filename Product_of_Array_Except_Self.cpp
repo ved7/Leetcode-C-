@@ -1,3 +1,5 @@
+// Approach: maintain two array prevMultiple which contain multiple of all previous elements in array and like wise 
+// nextMultiple for all element occuring after(excluding itself in both cases) and finally resultant element will be next[index] * prev[index]
 class Solution
 {
 public:
