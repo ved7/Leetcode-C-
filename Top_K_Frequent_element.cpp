@@ -1,5 +1,8 @@
 class Solution
 {
+    //Approach: step-1: Make a frequency list using hash_map.
+               //step-2: Maintain a minheap using priority_queue inserting {frequency,number} upto k terms
+               //Step-3: pop number till heap get empty and store the result in vector and return it
 public:
     vector<int> topKFrequent(vector<int> &nums, int k)
     {
