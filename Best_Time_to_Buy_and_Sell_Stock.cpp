@@ -6,14 +6,12 @@ public:
         
         int l = 0;
         int r = 1;
-        
+        int minVal = prices[0];
         while( r < n) {
-            if(prices[r] > prices[l]){
-                maximumProfit = max(maximumProfit,prices[r] - prices[l]); 
+            if(prices[r] > minVal){
+                maximumProfit = max(maximumProfit,prices[r] - minVal);
             }
-            else{
-                l = r;
-            }
+            minVal = min(minVal,prices[r]);
             r++;
         }
         return maximumProfit; 
